@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Delight</title>
+
+    {% load static%}
+    <!--style cs-->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+
+    <!--js file-->
+    <script src="file.js"></script>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/92d70a2fd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="home">
+      <div class="header">
+        <nav>
+          <img src="{% static 'image/logo.jpg'%}" style="height: 80px" />
+
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="city.html">Deliver in</a></li>
+            <li><a href="story.html">Our story</a></li>
+            <li><a href="product.html">Product</a></li>
+          </ul>
+        </nav>
+
+        <!--<div class="icon">
+          <a href=""><i class="fa-solid fa-user"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href=""><i class="fa fa-search"></i></a>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="count"></p>
+          </div>
+          <a href=""><div class="fa fa-search" id="search-btn"></div></a>
+        </div>-->
+
+        <div class="icon">
+          <a href="register.html"
+            ><i class="fa-solid fa-user" style="margin-left: -15%"></i
+          ></a>
+
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href=""><i class="fa-regular fa-heart"></i></a>
+        </div>
+        <a href="#" class="btn"><button class="btn1">Download App</button> </a>
+      </div>
+
+      <!-- <div>
+        <select id="state" onchange="populateStates">
+          <option value="" selected disabled id="state">select state</option>
+          <option value="chennai">
+            <img src="./image/milk.webp" />CHENNAI
+          </option>
+          <option value="madurai">MADURAI</option>
+        </select>
+      </div> -->
+
+      <div class="lmages">
+        <img src=" {% static 'image/new background.png'%}" class="new" />
+
+        <h1 class="h1_value">Unlock Free Trial Membership On Your Signup</h1>
+        <p class="p_value">
+          Natural,Fresh,100% Pure Essentials Delivered To Your Doorstep.<br />Start
+          The Journey To Live Better.
+        </p>
+      </div>
+    </section>
+
+    <section class="fresh">
+      <div class="container1">
+        <h1 class="fresh1">We Are Bringing Natural & Fresh Back</h1>
+        <p class="fresh2">
+          Better Everyday Healthy Begins With The Basic.We Ensure verythng in
+          your kitchen has been thoroughly tested for purity and freshness.
+        </p>
+
+        <table>
+          <tr>
+            <th>
+              <img src="{% static 'image/milk.webp'%}" class="news" />
+            </th>
+            <th>
+              <img src="{% static 'image/test tube.webp'%}" class="news" />
+            </th>
+            <th>
+              <img src="{% static 'image/theromometer.webp'%}" class="news" />
+            </th>
+            <th>
+              <img src="{% static 'image/doorstep.webp'%}" class="news" />
+            </th>
+          </tr>
+
+          <tr>
+            <th>Milking Twice a day</th>
+            <th>100+ tests everyday</th>
+            <th>Pasteurization & Packing at 4°C</th>
+            <th>assured 7 aM doorstep delivery</th>
+          </tr>
+
+          <tr>
+            <td>
+              we source milk frm farmers<br />
+              on the outskrits of your city for<br />
+              complete freshness and purity
+            </td>
+            <td>
+              we qualty test all milk for<br />
+              adulteration every single day
+            </td>
+            <td>
+              maintainng mlk at 4°C improves its <br />shelf life and
+              prevents<br />
+              harmful bacteria growth
+            </td>
+            <td>
+              fresh milk reaches your doorstep <br />within few hours of milking
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <h3>how we make it work fr you</h3>
+
+    <section class="shoppig">
+      <div class="container2">
+        <img
+          src="{% static 'image/home.png'%}"
+          style="height: 25%; margin-top: 10%"
+          ;
+        />
+        <h1>
+          modify your order till 12 midnight for next day early <br />morning
+          delivery of fresh cow and buffalo milk.
+        </h1>
+        <p>
+          we source cow milk,buffalo milk,yogurts,eggs,and all other essentials
+          fresh from the best farms n india.after quality testing at farms and
+          then in our labs,we deliver all your daily needs without preservatves
+          or mixing
+        </p>
+
+        <table class="table_1">
+          <tr>
+            <td>
+              <img
+                src="{% static 'image/shop.png'%} "
+                style="width: 40%; height: 20%"
+                ;
+              />
+            </td>
+            <td style="font-size: 15px">order fresh milk & groceries daily</td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="{% static 'image/fresh.png'%}"
+                style="width: 40%; height: 20%"
+                ;
+              />
+            </td>
+            <td style="font-size: 15px">set a customized subscription plan</td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="{% static 'image/cal.png'%}"
+                style="width: 40%; height: 20%"
+                ;
+              />
+            </td>
+            <td style="font-size: 15px; margin-left: -5%">
+              use vacation made for skipping deliveries
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="{% static 'image/wall.png'%}"
+                style="width: 40%; height: 20%"
+                ;
+              />
+            </td>
+            <td style="font-size: 15px">grab exciting offers for big saving</td>
+          </tr>
+        </table>
+
+        <div class="v1"></div>
+      </div>
+    </section>
+
+    <h3>farm to home everyday</h3>
+
+    <section class="delivery">
+      <div class="container3">
+        <img
+          src="{% static 'image/first1.webp'%}"
+          style="width: 25%; height: 10%; margin: 5%; margin-top: -5%"
+        />
+        <img
+          src="{% static 'image/second2.webp'%}"
+          style="width: 20%; height: 10%; margin: 5%; margin-top: -5%"
+        />
+        <img
+          src="{% static 'image/third3.webp'%}"
+          style="width: 20%; height: 10%; margin: 5%; margin-top: -5%"
+        />
+      </div>
+
+      <hr class="h1" />
+      <hr class="h2" />
+    </section>
+
+    <h3 style="margin-top: 5%">We Deliver in</h3>
+
+    <section class="images">
+      <div class="cities">
+        <div class="city">
+          <div>
+            <img src="{% static 'image/gra-fort.png'%}" />
+            <h6 style="margin-left: 30%; font-size: 15px">Agra</h6>
+          </div>
+          <div>
+            <img src="{% static 'image/bara-imambara.png'%}" />
+            <h6 style="margin-left: 20%; font-size: 15px">Bara imambara</h6>
+          </div>
+
+          <div>
+            <img src="{% static 'image/cellular-jail.png'%}" />
+            <h6 style="margin-left: 10%; font-size: 15px">
+              Andaman & Nicobar Islands
+            </h6>
+          </div>
+          <div>
+            <img src="{% static 'image/charminar.png'%}" />
+            <h6 style="margin-left: 30%; font-size: 15px">Telangana</h6>
+          </div>
+
+          <div>
+            <img src="{% static 'image/chennai.png'%}" />
+            <h6 style="margin-left: 30%; font-size: 15px">chennai</h6>
+          </div>
+
+          <div>
+            <img src="{% static 'image/delhi.png'%}" />
+            <h6 style="margin-left: 35%; font-size: 15px">delhi</h6>
+          </div>
+          <div>
+            <img src="{% static 'image/gateway-of-india.png'%}" />
+            <h6 style="margin-left: 35%; font-size: 15px">Mumbai</h6>
+          </div>
+
+          <div>
+            <img src="{% static 'image/hawa-mahal.png'%}" />
+            <h6 style="margin-left: 30%; font-size: 15px">hawa-mahal</h6>
+          </div>
+          <div>
+            <img src="{% static 'image/india-gate.png" />
+            <h6 style="margin-left: 30%; font-size: 15px">india gate</h6>
+          </div>
+
+          <div>
+            <img src="{% static 'image/qutub-minar.png'%}" />
+            <h6 style="margin-left: 30%; font-size: 15px">qutub-minar</h6>
+          </div>
+          <div>
+            <img src="{% static 'image/red-fort.png'%}" />
+            <h6 style="margin-left: 40%; font-size: 15px">red-fort</h6>
+          </div>
+          <div>
+            <img src="{% static 'image/shaniwar-wada.png'%}" />
+            <h6 style="margin-left: 40%; font-size: 15px">shaniwar-wada</h6>
+          </div>
+          <div>
+            <img src="{% static 'image/sri-mahadeshwara-temple.png'%}" />
+            <h6 style="margin-left: 25%; font-size: 15px">sri-mahadeshwara</h6>
+          </div>
+          <div>
+            <img src="{% static 'image/surat-municipal-corporation.png'%}" />
+            <h6 style="margin-left: 10%; font-size: 15px">
+              surat-municipal-corporation
+            </h6>
+          </div>
+          <div>
+            <img src="{% static 'image/tajmahal.png'%}" />
+            <h6 style="margin-left: 30%; font-size: 15px">taj mahal</h6>
+          </div>
+          <div>
+            <img src="{% static 'image/victoria-memorial.png'%}" />
+            <h6 style="margin-left: 40%; font-size: 15px">victoria-memorial</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="qr">
+      <div class="membership">
+        <h2 style="margin-top: 4%; margin-left: 3%; font-size: 25px">
+          Free Membership
+        </h2>
+        <p style="margin-top: 1%; margin-left: 3%; font-size: 20px">
+          on your signup
+        </p>
+
+        <div class="scanner">
+          <img src="{% static 'image/qr_code.png'%}" class="scan_code" />
+          <h6 style="margin-left: 30%; margin-top: 1%">scan to download</h6>
+        </div>
+
+        <form class="input_value">
+          <input type="text" placeholder="enter your number" />
+          <button type="submit" class="btn3">Send Link</button>
+        </form>
+
+        <div class="app">
+          <a
+            href="https://apps.apple.com/in/app/country-delight-milk-grocery/id1090309756?is_retargeting=true&source_caller=ui&shortlink=pq2np6sj&c=IOS_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+            ><button class="btn4">
+              <img
+                src="{% static 'image/apple (1).png' %} "
+                style="height: 30px"
+              />Available on the app store
+            </button></a
+          ><br />
+
+          <a
+            href="https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight&is_retargeting=true&source_caller=ui&shortlink=7r9ie41j&c=Playstore_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+            ><button class="btn4">
+              <img
+                src="{% static 'image/android.png'%}"
+                style="height: 30px"
+              />Get it on google play
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <h3>our success stories</h3>
+
+    <section class="story">
+      <div class="stories">
+        <div class="values">
+          <h4>120+ Happy customer</h4>
+        </div>
+
+        <div class="values">
+          <h4>10k+ Farmers supported</h4>
+        </div>
+
+        <div class="values">
+          <h4>140k+ orders delivered</h4>
+        </div>
+
+        <div class="values">
+          <h4>25k+ cities,we are delivering in</h4>
+        </div>
+      </div>
+    </section>
+
+    <h3>Delighted customer</h3>
+
+    <section class="reviews">
+      <div class="customer">
+        <div class="review1">
+          <h4>
+            i recently tried placing my orders throught the country delight
+            app.<br /><br />
+            <a href="#" style="color: blue; font-size: 15px">
+              <i class="fa-brands fa-square-facebook"></i> Facebook..</a
+            >
+
+            <img src="{% static 'image/women1.png'%}" class="review_customer" />
+          </h4>
+        </div>
+
+        <div class="review1">
+          <h4>
+            Cow milk is good for children and elderly people ,that's why i give
+            it to both my kids.<br /><br />
+            <a href="#" style="color: rgb(189, 28, 28); font-size: 15px"
+              ><i class="fa-brands fa-google-play"></i>Google Play..</a
+            >
+
+            <img src="{% static 'image/women2.jpg'%}" class="review_customer" />
+          </h4>
+        </div>
+
+        <div class="review1">
+          <h4>
+            i have been a fitness professional for over 15 years. i switched to
+            cow milk as it is a very healthy. <br /><br /><a
+              href="#"
+              style="color: blue; font-size: 15px"
+            >
+              <i class="fa-brands fa-square-facebook"></i> Facebook..</a
+            >
+
+            <img src="{% static 'image/women3.png'%}" class="review_customer" />
+          </h4>
+        </div>
+
+        <div class="review1">
+          <h4>
+            country delight milk is very good.i get a lot of alai and tsty dahi
+            from the milk.<br /><br />
+            <a href="#" style="color: rgb(189, 28, 28); font-size: 15px"
+              ><i class="fa-brands fa-google-play"></i>Google Play..</a
+            >
+
+            <img src="{% static 'image/women4.jpg'%}" class="review_customer" />
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="last">
+      <div class="external">
+        <h1>Explore our range</h1>
+        <p>
+          choose from our wide range of staples,dairy products,and fresh
+          harvest.get 100% natural essentials home delivered every day.
+        </p>
+
+        <img
+          src="{% static 'image/fruits.webp'%}"
+          style="margin-top: -2%; height: auto; width: 95%; margin-left: 3%"
+        />
+
+        <a href="#" class="btn6">
+          <button class="btn5">view all products</button></a
+        >
+
+        <div>
+          <table
+            style="
+              width: 92%;
+              border: 1px solid white;
+              margin-left: 3%;
+              background-color: white;
+            "
+          >
+            <tr>
+              <th>cow milk</th>
+              <th>buffalo milk</th>
+              <th>low fat cow milk</th>
+              <th>download app</th>
+            </tr>
+
+            <tr>
+              <td class="haii">cow milk</td>
+              <td class="haii">buffalo milk</td>
+              <td class="haii">low at cow milk</td>
+              <td>
+                <a
+                  href="https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight&is_retargeting=true&source_caller=ui&shortlink=7r9ie41j&c=Playstore_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                  ><button class="btn7">
+                    <img
+                      src="{% static 'image/android.png'%}"
+                      style="height: 30px; margin-right: -1%"
+                    />Get it on google play
+                  </button></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://apps.apple.com/in/app/country-delight-milk-grocery/id1090309756?is_retargeting=true&source_caller=ui&shortlink=pq2np6sj&c=IOS_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                  ><button class="btn7">
+                    <img
+                      src="{% static 'image/apple (1).png'%} "
+                      style="height: 30px; margin-right: -1%"
+                    />Available on the app store
+                  </button></a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr />
+        <div>
+          <table style="width: 80%; margin-left: 2%">
+            <tr>
+              <td>about us</td>
+              <td>privacy</td>
+              <td>terms & condition</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>how can we help</td>
+              <td>FAQs</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>connect with us</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="logos">
+          <a href="facebook.com"
+            ><i class="fa-brands fa-facebook-f" style="color: #74c0fc"></i
+          ></a>
+          <a href="instagram.com"
+            ><i class="fa-brands fa-instagram" style="color: #d70f0f"></i
+          ></a>
+          <a href="linkedin.com"
+            ><i class="fa-brands fa-linkedin-in" style="color: #74c0fc"></i
+          ></a>
+          <a href="youtube.com"
+            ><i class="fa-brands fa-youtube" style="color: #c90303"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

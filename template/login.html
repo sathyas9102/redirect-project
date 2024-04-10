@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    {%load static%}
+    <!--style css-->
+    <link rel="stylesheet" href="{% static 'css/login.css'%}" />
+  </head>
+  <body class="reg_img">
+    {%block content%}
+
+    <!-- <img
+      src="{%static 'image/pexels-this-is-zun-1679551.jpg'%}"
+      class="login_img"
+    /> -->
+
+    <div class="form_content">
+      <h3 class="login">Login</h3>
+
+      <form action="login" method="POST" autocomplete="off">
+        {% csrf_token%}
+        <div class="input_field">
+          <label>Email</label>
+          <input type="text" name="email" required="" />
+        </div>
+
+        <div class="input_field">
+          <label>password</label>
+          <input type="password" name="password" required="" />
+        </div>
+
+        <!-- <a href="#" class="forgot_pass">forgot password</a> -->
+        <button type="submit" class="forgot_pass2">Login</button>
+
+        <div class="bottpm_link">
+          Don't have an account?<a href="register.html" class="hii">Sign in</a>
+        </div>
+      </form>
+    </div>
+    {%endblock%}
+  </body>
+</html>

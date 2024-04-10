@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--style css-->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+
+    <!--js file-->
+    <script src="fil.js"></script>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <img src="{%static 'image/logo1.png'%}" style="height: 80px" />
+
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="city.html">Deliver in</a></li>
+          <li><a href="story.html">Our story</a></li>
+          <li><a href="product.html">Product</a></li>
+        </ul>
+      </nav>
+      <a href="qr.html" class="btn"
+        ><button class="btn1">Downlod App</button></a
+      >
+    </div>
+
+    <div class="dropdown">
+      <div class="select">
+        <span class="selected">chennai</span>
+        <h1>select location</h1>
+        <h3>provide your location to server you better</h3>
+        <h4 style="margin-left: 10%; margin-top: 2%">popular cities</h4>
+
+        <div class="popular_cities">
+          <div class="popular_2">
+            <a href="#"
+              ><img
+                src="{%static 'image/popular 1.png'%}"
+                style="width: 60%; height: 100px"
+              />
+              <h6>bangalore</h6></a
+            >
+          </div>
+
+          <div class="popular_2">
+            <a href="#"
+              ><img
+                src="{%static 'image/popular 2.png'%}"
+                style="width: 60%; height: 100px"
+              />
+              <h6>chandigarh</h6></a
+            >
+          </div>
+
+          <div class="popular_2">
+            <a href="#"
+              ><img
+                src="{%static 'image/popular 3.png'%}"
+                style="width: 60%; height: 100px"
+              />
+              <h6>chennai</h6></a
+            >
+          </div>
+
+          <div class="popular_2">
+            <a href="#">
+              <img
+                src="{%static 'image/popular 4.png'%}"
+                style="width: 60%; height: 100px"
+              />
+              <h6>delhi NCR</h6></a
+            >
+          </div>
+
+          <div class="other">
+            <h6>guntur</h6>
+            <h6>kolkata</h6>
+            <h6>lucknow</h6>
+          </div>
+
+          <div class="popular_1">
+            <a href="#">
+              <img
+                src="{%static 'image/popular 5.png'%}"
+                style="width: 60%; height: 100px; margin-left: -135%"
+              />
+              <h6 style="margin-left: -135%">hyderabad</h6></a
+            >
+          </div>
+
+          <div class="popular_1">
+            <a href="#"
+              ><img
+                src="{%static 'image/popular 6.png'%}"
+                style="width: 60%; height: 100px; margin-left: -90%"
+              />
+              <h6 style="margin-left: -80%">jaipur</h6></a
+            >
+          </div>
+
+          <div class="popular_1">
+            <a href="#"
+              ><img
+                src="{%static 'image/popular 7.png'%}"
+                style="width: 60%; height: 100px; margin-left: -55%"
+              />
+              <h6 style="margin-left: -50%">mumbai</h6></a
+            >
+          </div>
+
+          <div class="popular_1">
+            <a href="#">
+              <img
+                src="{%static 'image/popular 8.png'%}"
+                style="width: 60%; height: 100px; margin-left: -30%"
+              />
+              <h6 style="margin-left: -20%">pune</h6></a
+            >
+          </div>
+        </div>
+
+        <div class="others">
+          <h4>other cities</h4>
+          <h6>coimbatore</h6>
+          <h6>guntur</h6>
+          <h6>kolkata</h6>
+          <h6>lucknow</h6>
+          <h6>mysore</h6>
+          <h6>nashik</h6>
+          <h6>surat</h6>
+          <h6>vijayawada</h6>
+          <h6>warangal</h6>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

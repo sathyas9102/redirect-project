@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function post_value() {
+        //window.opener.location.href = "delivery.html";
+        opener.document.f1.f_name.value = document.frm.fi_name.value;
+        self.close();
+      }
+    </script>
+  </head>
+  <body>
+    <h3>child window</h3>
+    <form method="post" action="" name="frm">
+      <label>Enter city</label>
+      <input type="text" name="fi_name" />
+    </form>
+    <input type="button" value="enter" onclick="post_value()" />
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="stle.css" />
+    <script src="file.js"></script>
+  </head>
+  <body>
+    <div class="dropdown">
+      <div class="select">
+        <span class="selected">delivery In</span>
+        <div class="caret"></div>
+      </div>
+
+      <ul class="menu">
+        <li class="active">chennai</li>
+        <li>madurai</li>
+        <li>tiruvallur</li>
+        <li>kanchipuram</li>
+      </ul>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Delvery In</h3>
+    <select id="state" onchange="populateStates">
+      <option value="" selected disabled>select state</option>
+      <option value="chennai"><img src="{%static 'image/milk.webp" />CHENNAI</option>
+      <option value="madurai">MADURAI</option>
+    </select>
+  </body>
+</html>

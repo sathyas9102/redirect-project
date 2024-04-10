@@ -1,0 +1,231 @@
+{% extends 'bread.html' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    {%load static%}
+    <!--style cs-->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+
+    <!--js file-->
+    <script src="fil.js"></script>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--box icon-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css"
+      integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js"
+      integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    {%block content%}
+    <div class="header">
+      <nav>
+        <img src="{%static 'image/logo1.png'%}" style="height: 80px" />
+
+        <ul>
+          <li><a href="home.html">Home</a><li></li>
+
+          <li><a href="city.html">Deliver in</a></li>
+          <li><a href="story.html">Our story</a></li>
+          <li><a href="product.html">Product</a></li>
+        </ul>
+      </nav>
+
+      <div class="icon">
+        <a href=""><i class="fa-solid fa-user" style="margin-left: -15%"></i></a>
+        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+   
+      <a href="#" class="btn"><button class="btn1">Downlod App</button> </a>
+    </div>
+
+    <section class="whtite">
+      <div class="white_egg">
+        <img
+          src="{%static 'image/White eggs- PDP 2.jpg_1685703585486.jpg'%}"
+          style="width: 50%; height: 55%"
+        />
+        <div class="row_1">
+          <h4 class="date">protein brown eggs</h4>
+          <h5 class="amount">
+            <i class="fa-solid fa-indian-rupee-sign"></i>203
+          </h5>
+          <h5 class="amount">10 pcs</h5>
+<hr>
+          <div class="flex">
+            <h5><i class="fa-solid fa-cow" style="font-size:15px"></i>UV Sanitized</h5>
+            <h5><i class="fa-solid fa-flask"style="font-size:15px"></i></i>Dark yolk=Protein rich</h5>
+            <h5><i class="fa-light fa-spray-can-sparkles" style="font-size:15px"></i>Fresh from the farms</h5>
+            <h5><i class="fa-solid fa-flask"style="font-size:15px"></i></i>Healthy and happy birds</h5>
+          </div>
+<hr>
+          <p style="font-size: 18px">
+            • Country Delight is delighted to present the brand of desi eggs that has become a quick favourite among our egg connoisseurs.<br><br>
+
+• Our most premium eggs on offer that comes from a special bunch of poultry reared for desi eggs and given the best quality feed.<br><br>
+
+• The result? They lay eggs with the highest nutrition content! The dark orange color of the yolk signifies the rich creamy flavour of the egg.<br><br>
+          </p>
+
+          <a
+            href="https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight&shortlink=8fe23a7e&is_retargeting=true&c=All_PDPs_IOS_Playstore_Both&pid=CountryDelight_Website&source_caller=ui"
+            class="btn6"
+          >
+            <button class="btn5">available all products</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="last">
+      <div class="external" style="margin-top: -25%">
+        <h1>Explore our range</h1>
+        <p>
+          choose from our wide range of staples,dairy products,and fresh
+          harvest.get 100% natural essentials home delivered every day.
+        </p>
+
+        <img
+          src="{%static 'image/fruits.webp'%}"
+          style="margin-top: -2%; height: auto; width: 95%; margin-left: 3%"
+        />
+
+        <a href="#" class="btn6">
+          <button class="btn5">view all products</button></a
+        >
+
+        <div>
+          <table
+            style="
+              width: 92%;
+              border: 1px solid white;
+              margin-left: 3%;
+              background-color: white;
+            "
+          >
+            <tr>
+              <th>cow milk</th>
+              <th>buffalo milk</th>
+              <th>low fat cow milk</th>
+              <th>download app</th>
+            </tr>
+
+            <tr>
+              <td class="haii">cow milk</td>
+              <td class="haii">buffalo milk</td>
+              <td class="haii">low at cow milk</td>
+              <td>
+                <a
+                  href="https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight&is_retargeting=true&source_caller=ui&shortlink=7r9ie41j&c=Playstore_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                  ><button class="btn7">
+                    <img
+                      src="{%static 'image/android.png'%}"
+                      style="height: 30px; margin-right: -1%"
+                    />Get it on google play
+                  </button></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://apps.apple.com/in/app/country-delight-milk-grocery/id1090309756?is_retargeting=true&source_caller=ui&shortlink=pq2np6sj&c=IOS_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                  ><button class="btn7">
+                    <img
+                      src="{%static 'image/apple (1).png '%}"
+                      style="height: 30px; margin-right: -1%"
+                    />Available on the app store
+                  </button></a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr />
+        <div>
+          <table style="width: 80%; margin-left: 2%">
+            <tr>
+              <td>about us</td>
+              <td>privacy</td>
+              <td>terms & condition</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>how can we help</td>
+              <td>FAQs</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>connect with us</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="logos">
+          <a href="facebook.com"
+            ><i class="fa-brands fa-facebook-f" style="color: #74c0fc"></i
+          ></a>
+          <a href="instagram.com"
+            ><i class="fa-brands fa-instagram" style="color: #d70f0f"></i
+          ></a>
+          <a href="linkedin.com"
+            ><i class="fa-brands fa-linkedin-in" style="color: #74c0fc"></i
+          ></a>
+          <a href="youtube.com"
+            ><i class="fa-brands fa-youtube" style="color: #c90303"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    {%endblock%}
+  </body>
+</html>

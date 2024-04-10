@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    {%load static%}
+    <!--style css-->
+    <link rel="stylesheet" href="{%static 'css/style.css'%}" />
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    {%block content%}
+    <div class="header">
+      <nav>
+        <img src="{%static 'image/logo1.png'%}" style="height: 80px" />
+
+        <ul>
+          <li><a href="home.html">Home</a></li>
+
+          <li><a href="city.html">Deliver in</a></li>
+          <li><a href="story.html">Our story</a></li>
+          <li><a href="product.html">Product</a></li>
+        </ul>
+      </nav>
+
+      <div class="icon">
+        <a href=""
+          ><i class="fa-solid fa-user" style="margin-left: -15%"></i
+        ></a>
+        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+
+      <a href="#" class="btn"><button class="btn1">Downlod App</button> </a>
+    </div>
+
+    <section class="stories">
+      <div class="our_story">
+        <h1 style="text-align: center; margin-left: -5%; font-size: xx-large">
+          our story
+        </h1>
+        <p style="color: gray; text-align: center">
+          50 years back, life was very simple. We used to have a cow in our
+          backyard that gave us natural and fresh milk everyday. There was never
+          a need to worry about adulteration since we owned the animal. Today,
+          the milk we consume is either reconstituted/recombined with milk
+          powder or takes days to reach our home post milking which is prone to
+          adulteration.<br /><br />
+          Started in 2015, Country Delight is a bunch of Engineers and IIM
+          Graduates who aim to bring back the Basics of Milk. Country Delight
+          promises natural, fresh and unadulterated milk directly to the
+          doorstep of the consumer. Consumer ordering and servicing happens
+          through a first-of-its-kind mobile application that completely takes
+          away the hassle of gging
+        </p>
+      </div>
+    </section>
+
+    <h3>career</h3>
+    <h3 style="margin-left: 70%; margin-top: -2%">our founders</h3>
+
+    <section class="become">
+      <div class="superhero">
+        <img
+          src="{%static 'image/graphic.jpg'%}"
+          style="width: 90%; height: 70%; margin-left: 5%; margin-top: 5%"
+        />
+        <h1 style="padding: 25px; font-size: 40px; margin-left: -1%">
+          Become a <span style="font-size: 40px">countryDelight</span> superhero
+        </h1>
+
+        <h5 style="margin-left: 25%; font-size: 20px">
+          we are hiring all across descipline
+        </h5>
+
+        <h5 style="margin-left: 25%; font-size: 20px; line-height: 65px">
+          contact us at:info@countrydelight.in
+        </h5>
+      </div>
+    </section>
+
+    <section class="hello">
+      <div class="everyone">
+        <img
+          src="{%static 'image/co-founder1.jpg'%}"
+          style="width: 15%; height: 25%; margin-left: 40%; margin-top: -2%"
+        />
+        <h3
+          style="color: gray; font-size: 17px; padding: 25px; margin-top: -2%"
+        >
+          <i
+            class="fa-solid fa-quote-left"
+            style="color: #c3c6d1; font-size: 30px"
+          ></i>
+          we saw a clear problem to slove, a huge industry to tap into and a
+          sustainable business model that we could scale using technology.a nice
+          initiative.
+        </h3>
+
+        <h4 style="margin-left: 70%">chakradhar gade</h4>
+        <h5 style="margin-left: 70%; color: gray; font-size: 12px">
+          co-founder
+        </h5>
+        <h6 style="margin-left: 70%; color: gray; font-size: 12px">country</h6>
+      </div>
+
+      <div class="market">
+        <img
+          src="{%static 'image/co-founder2.jpg'%}"
+          style="width: 15%; height: 25%; margin-left: 40%; margin-top: -2%"
+        />
+        <h3
+          style="color: gray; font-size: 17px; padding: 25px; margin-top: -2%"
+        >
+          <i
+            class="fa-solid fa-quote-left"
+            style="color: #c3c6d1; font-size: 30px"
+          ></i>
+          we realize that the indian liquid milk market,despite being such a
+          large and old industry,is devoid of any innovation and follows very
+          unscientific pratices.for example,at the inital levels of
+          aggregation,most of the milk testing is still done by
+        </h3>
+
+        <h4 style="margin-left: 70%">nitn kaushal</h4>
+        <h5 style="margin-left: 70%; color: gray; font-size: 12px">
+          co-founder
+        </h5>
+        <h6 style="margin-left: 70%; color: gray; font-size: 12px">
+          country Delight
+        </h6>
+      </div>
+    </section>
+
+    <section class="last">
+      <div class="external">
+        <h1>Explore our range</h1>
+        <p>
+          choose from our wide range of staples,dairy products,and fresh
+          harvest.get 100% natural essentials home delivered every day.
+        </p>
+
+        <img
+          src="{%static 'image/fruits.webp'%}"
+          style="margin-top: -2%; height: auto; width: 95%; margin-left: 3%"
+        />
+
+        <a href="#" class="btn6">
+          <button class="btn5">view all products</button></a
+        >
+
+        <div>
+          <table
+            style="
+              width: 92%;
+              border: 1px solid white;
+              margin-left: 3%;
+              background-color: white;
+            "
+          >
+            <tr>
+              <th>cow milk</th>
+              <th>buffalo milk</th>
+              <th>low fat cow milk</th>
+              <th>download app</th>
+            </tr>
+
+            <tr>
+              <td class="haii">cow milk</td>
+              <td class="haii">buffalo milk</td>
+              <td class="haii">low at cow milk</td>
+              <td class="haii">
+                <a
+                  href="https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight&is_retargeting=true&source_caller=ui&shortlink=7r9ie41j&c=Playstore_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                  ><button class="btn7">
+                    <img
+                      src="{%static 'image/android.png'%}"
+                      style="height: 30px; margin-right: -1%"
+                    />Get it on google play
+                  </button></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://apps.apple.com/in/app/country-delight-milk-grocery/id1090309756?is_retargeting=true&source_caller=ui&shortlink=pq2np6sj&c=IOS_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                  ><button class="btn7">
+                    <img
+                      src="{%static 'image/apple (1).png'%} "
+                      style="height: 30px; margin-right: -1%"
+                    />Available on the app store
+                  </button></a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr />
+        <div>
+          <table style="width: 80%; margin-left: 2%">
+            <tr>
+              <td>about us</td>
+              <td>privacy</td>
+              <td>terms & condition</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>how can we help</td>
+              <td>FAQs</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>connect with us</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="logos">
+          <a href="facebook.com"
+            ><i class="fa-brands fa-facebook-f" style="color: #74c0fc"></i
+          ></a>
+          <a href="instagram.com"
+            ><i class="fa-brands fa-instagram" style="color: #d70f0f"></i
+          ></a>
+          <a href="linkedin.com"
+            ><i class="fa-brands fa-linkedin-in" style="color: #74c0fc"></i
+          ></a>
+          <a href="youtube.com"
+            ><i class="fa-brands fa-youtube" style="color: #c90303"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    {%endblock%}
+  </body>
+</html>

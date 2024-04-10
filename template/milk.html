@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    {%load static%}
+    <!-- {% static "image" as baseUrl %} -->
+    <!--style cs-->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+
+    <!--js file-->
+    <!-- <script src="file.js"></script> -->
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--box icon-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css"
+      integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js"
+      integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <img src="{% static 'image/logo1.png'%}" style="height: 80px" />
+
+        <ul>
+          <li><a href="home.html">Home</a><li></li>
+          <li><a href="city.html">Deliver in</a></li>
+          <li><a href="story.html">Our story</a></li>
+          <li><a href="product.html">Product</a></li>
+        </ul>
+      </nav>
+    
+      <div class="icon">
+        <a href=""><i class="fa-solid fa-user" style="margin-left: -15%"></i></a>
+        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+   
+
+      <a href="#" class="btn"><button class="btn1">Downlod App</button> </a>
+    </div>
+
+    <section class="coconut">
+      <!--<div class="water">
+        <a href="#"
+          ><h2 class="milks">
+            milk & <i class="bx bxs-right-arrow" style="margin-left: 4%"></i
+            ><br />coconut water
+          </h2></a
+        >-->
+
+        <table style="width:5%">
+          <tr>
+           <th><img src="{% static 'image/milk_1.png'%}" style="width:auto;height: 40px;" /></th> 
+            <th><a href="bread.html" class="sss">
+             milk & coconut water
+            </th><a>
+          </tr>
+
+          <tr>
+            <th><img src="{% static 'image/bread.png'%}" style="width:auto;height: 40px;" /></th>
+            <th><a href="milk.html" class="sss">bread & eggs</a></th>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <h3 style="margin-top: -17%;margin-left: 20%;font-size:30px">buy fresh milk online</h3>
+
+ <!-- milk content 1 -->
+ {% for Milk in milks %}
+<section class="">
+  <div class="Container6">
+    <div class="milk_image6">
+      <img src="{% static 'image/COCONUT-PDP-2.jpg_1692174145893.jpg'%}" class="image_milk6">
+
+      <!-- <img src="{{milk.jpeg.url}}"> -->
+    </div>
+
+    <div class="milk_content6">
+      <div class="milk_title6"><a href="">{{Milk.name}}</a></div>
+      <div class="milk_price6">${{Milk.price}} </div>
+      <div class="milk_liter6">{{Milk.liter}}ml</div>
+    </div>
+
+    <hr>
+    <div class="milk_subcontent6">
+      <p>
+        <img src="{% static 'image/leaf.jpeg'%}" class="leaf6" />chemical free
+        <img src="{% static 'image/test.jpeg'%}" class="leaf6" />72 test everyday
+        <img src="{% static 'image/apple.jpeg'%}" class="leaf6" />farm
+        freshness<br />
+        <img src="{% static 'image/milk1.jpeg'%}" class="leaf6" />100% pure
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="milk_description">
+      <p>• Country Delight is delighted to present the brand of desi eggs that has become a quick favourite among our egg connoisseurs.</p>
+    </div>
+    <hr>
+
+    <div><a href="#" class="btns"><button class="btn12">
+          <i class="fa-solid fa-cart-shopping"></i>Add to cart
+        </button>
+        <button class="btn123">
+          <i class="fa-solid fa-heart"></i>Add to wishlist
+        </button></a>
+    </div>
+  </div>
+
+</section><br><br>
+{% endfor%}
+
+<!-- <section class="">
+  <div class="Container7">
+    <div class="milk_image">
+      <img src="{% static 'image/COCONUT-PDP-2.jpg_1692174145893.jpg'%}" class="image_milk7">
+    </div>
+
+    <div class="milk_content7">
+      <div class="milk_title7"><a href="">Coconut Water</a></div>
+      <div class="milk_price7">$ 50</div>
+      <div class="milk_liter7">450ml</div>
+    </div>
+    <hr>
+  
+
+    <div class="milk_subcontent7">
+      <p>
+        <img src="{% static 'image/s.png'%}" class="leaf7" />chemical free
+        <img src="{% static 'image/a.png'%}" class="leaf7" />72 test everyday
+        <img src="{% static 'image/t.png'%}" class="leaf7" />farm
+        freshness<br />
+        <img src="{% static 'image/h.png'%}" class="leaf7" />100% pure
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="milk_description">
+      <p>• Country Delight is delighted to present the brand of desi eggs that has become a quick favourite among our egg connoisseurs.</p>
+    </div>
+    <hr>
+
+    <div><a href="#" class="btns"><button class="btn12">
+          <i class="fa-solid fa-cart-shopping"></i>Add to cart
+        </button>
+        <button class="btn123">
+          <i class="fa-solid fa-heart"></i>Add to wishlist
+        </button></a>
+    </div>
+  </div>
+
+</section>
+
+<section class="">
+  <div class="Container8">
+    <div class="milk_image8">
+      <img src="{% static 'image/COCONUT-PDP-2.jpg_1692174145893.jpg'%}" class="image_milk8">
+    </div>
+
+    <div class="milk_content8">
+      <div class="milk_title8"><a href="">Coconut Water</a></div>
+      <div class="milk_price8">$ 50</div>
+      <div class="milk_liter8">450ml</div>
+    </div>
+
+    <hr>
+    <div class="milk_subcontent8">
+      <p>
+        <img src="{% static 'image/leaf.jpeg'%}" class="leaf8" />chemical free
+        <img src="{% static 'image/test.jpeg'%}" class="leaf8" />72 test everyday
+        <img src="{% static 'image/apple.jpeg'%}" class="leaf8" />farm
+        freshness<br />
+        <img src="{% static 'image/milk1.jpeg'%}" class="leaf8" />100% pure
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="milk_description">
+      <p>• Country Delight is delighted to present the brand of desi eggs that has become a quick favourite among our egg connoisseurs.</p>
+    </div>
+    <hr>
+
+    <div><a href="#" class="btns"><button class="btn12">
+          <i class="fa-solid fa-cart-shopping"></i>Add to cart
+        </button>
+        <button class="btn123">
+          <i class="fa-solid fa-heart"></i>Add to wishlist
+        </button></a>
+    </div>
+  </div>
+
+</section>
+
+<section class="">
+  <div class="Container9">
+    <div class="milk_image9">
+      <img src="{% static 'image/COCONUT-PDP-2.jpg_1692174145893.jpg'%}" class="image_milk9">
+    </div>
+
+    <div class="milk_content9">
+      <div class="milk_title9"><a href="">Coconut Water</a></div>
+      <div class="milk_price9">$ 50</div>
+      <div class="milk_liter9">450ml</div>
+    </div>
+    <hr>
+  
+
+    <div class="milk_subcontent9">
+      <p>
+        <img src="{% static 'image/s.png'%}" class="leaf9" />chemical free
+        <img src="{% static 'image/a.png'%}" class="leaf9" />72 test everyday
+        <img src="{% static 'image/t.png'%}" class="leaf9" />farm
+        freshness<br />
+        <img src="{% static 'image/h.png'%}" class="leaf9" />100% pure
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="milk_description">
+      <p>• Country Delight is delighted to present the brand of desi eggs that has become a quick favourite among our egg connoisseurs.</p>
+    </div>
+    <hr>
+
+    <div><a href="#" class="btns"><button class="btn12">
+          <i class="fa-solid fa-cart-shopping"></i>Add to cart
+        </button>
+        <button class="btn123">
+          <i class="fa-solid fa-heart"></i>Add to wishlist
+        </button></a>
+    </div>
+  </div>
+
+</section> -->
+
+
+
+
+    <section class="qr">
+        <div class="membership" style="background-color: aliceblue;margin-left: 20%; width: 80%;">
+          <h2 style="margin-top: 4%; margin-left: 3%; font-size: 25px">
+            Free Membership
+          </h2>
+          <p style="margin-top: 1%; margin-left: 3%; font-size: 20px">
+            on your signup
+          </p>
+  
+          <div class="scanner">
+            <img src="{% static 'image/qr_code.png'%} " class="scan_code" />
+            <h6 style="margin-left: 30%; margin-top: 1%">scan to download</h6>
+          </div>
+  
+          <form class="input_value">
+            <input type="text" placeholder="enter your number" />
+            <button type="submit" class="btn3">Send Link</button>
+          </form>
+  
+          <div class="app">
+            <a
+              href="https://apps.apple.com/in/app/country-delight-milk-grocery/id1090309756?is_retargeting=true&source_caller=ui&shortlink=pq2np6sj&c=IOS_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+              ><button class="btn4">
+                <img src="{% static 'image/apple (1).png'%} " style="height: 30px" />Available
+                on the app store
+              </button></a
+            ><br />
+  
+            <a
+              href="https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight&is_retargeting=true&source_caller=ui&shortlink=7r9ie41j&c=Playstore_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+              ><button class="btn4">
+                <img src="{% static 'image/android.png'%}" style="height: 30px" />Get it on
+                google play
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="detail">
+        <div class="details">
+            <p><b>Buffalo Milk:</b><br> <br>Thick and Creamy
+
+                Sourced from healthy Murrah buffaloes, our buffalo milk stands out for its thick, consistent texture and creamy malal, making it a luxurious choice for those who love the richness of their dairy. Its high-fat content not only enhances the taste but also makes it ideal for making homemade ghee, traditional desserts, and a creamier curd. Perfect for indulgence, Country Delight buffalo milk is a testament to our promise of delivering milk in its purest form with minimal processing.<br><br><br>
+                
+                <b>Cow Milk:</b><br><br> Sweet and aromatic
+                
+                Our cow milk has a naturally sweet taste and shows a hint of yellowish hue when boiled. Both are signs of purity and quality. Carefully sourced from healthy cows grazing on natural fodder, this milk offers a wholesome experience - from a fresh aroma to a satisfying mouthfeel. Its naturally occurring vitamins make pure cow milk an excellent choice for everyday consumption, both adults and kids alike.<br><br><br>
+                
+                <b>Creamy Cow Milk:</b><br><br> Creamier cow milk
+                
+                For those who crave that extra layer of cream in their milk, but are looking for alternatives to buffalo milk, gur Creamy Cow Milk is the answer. Enhanced with additional cream of cow milk, our creamy cow milk is perfect for a luxurious cup of coffee or as a base for dairy desserts. It also is a great choice for making cow ghee at home. Opt for this variety of milk if you want to enjoy cream but from pure cow milk.<br><br><br>
+                
+                <b>Low Malai Milk: </b><br><br>Buffalo milk with less cream Crafted for those who prefer the lighter side of buffalo milk, our Low Malai Milk offers the same rich taste but with less malai. It's the perfect balance for those looking to enjoy the benefits of buffalo milk without the extra fat. It is most suitable for daily consumption and a healthier lifestyle for fans of pure buffalo milk on a weight watch.<br><br><br>
+                
+                <b>Low Fat Cow Milk:</b> <br><br>Cow milk with low fat
+                
+                Our Low Fat Cow Milk is tailored for the health-conscious, offering all the goodness of cow milk with reduced fat content. It's an excellent choice for those aiming for weight loss or a heart-healthy diet without compromising on taste or necessary micro nutrition. Sweet in taste and consistent in thickness, Country Delight Low Fat Cow Milk is never watery.<br><br><br>
+                
+                <b>A2 Cow Milk:</b> <br><br>Single-source cow milk
+                
+                A2 cow milk, exclusively obtained from Sahiwal and Gir cow breeds, is a popular choice for children and the elderly for its easier digestion. It can also be a comfort for individuals with sensitive stomachs. Country Delight A2 Cow Milk comes in gable packaging that is easy to handle. Its creamy texture and sweet taste make it a versatile choice for drinking, cooking, and other dairy preparations. Sourced with care, it promises not only ease of digestion but also the inherent benefits of cow milk.<br><br><br>
+                
+                Each variant in our range is a result of our continuous effort to bring you and your family quality, purity, and health. Choosing to order from Country Delight ensures there's a choice for every preference and dietary need in your family. Choose Country Delight for milk that's not just nourishing but also a delight to the senses. Choosing to buy milk online and its benefits<br><br><br>
+                
+                In the digital age, buying milk online has revolutionized the way we approach shopping for daily essentials, offering convenience and value for money. Offline, consumers often face issues such as lack of freshness, limited selection, concerns over adulteration, and inflexible delivery schedules. Recognizing these challenges, online milk delivery apps like Country Delight have emerged as a beacon of seamless, secure, and satisfying buying experience.</p>
+
+        </div>
+      </section>
+
+      
+    <section class="last">
+        <div class="external">
+          <h1>Explore our range</h1>
+          <p>
+            choose from our wide range of staples,dairy products,and fresh
+            harvest.get 100% natural essentials home delivered every day.
+          </p>
+  
+          <img
+            src="{% static 'image/fruits.webp'%}"
+            style="margin-top: -2%; height: auto; width: 95%; margin-left: 3%"
+          />
+  
+          <a href="#" class="btn6">
+            <button class="btn5">view all products</button></a
+          >
+  
+          <div>
+            <table
+              style="
+                width: 92%;
+                border: 1px solid white;
+                margin-left: 3%;
+                background-color: white;
+              "
+            >
+              <tr>
+                <th>cow milk</th>
+                <th>buffalo milk</th>
+                <th>low fat cow milk</th>
+                <th>download app</th>
+              </tr>
+  
+              <tr>
+                <td class="haii">cow milk</td>
+                <td class="haii">buffalo milk</td>
+                <td class="haii">low at cow milk</td>
+                <td>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight&is_retargeting=true&source_caller=ui&shortlink=7r9ie41j&c=Playstore_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                    ><button class="btn7">
+                      <img
+                        src="{% static 'image/android.png'%}"
+                        style="height: 30px; margin-right: -1%"
+                      />Get it on google play
+                    </button></a
+                  >
+                </td>
+              </tr>
+  
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <a
+                    href="https://apps.apple.com/in/app/country-delight-milk-grocery/id1090309756?is_retargeting=true&source_caller=ui&shortlink=pq2np6sj&c=IOS_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                    ><button class="btn7">
+                      <img
+                        src="{% static 'image/apple (1).png'%} "
+                        style="height: 30px; margin-right: -1%"
+                      />Available on the app store
+                    </button></a
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+          <hr />
+          <div>
+            <table style="width: 80%; margin-left: 2%">
+              <tr>
+                <td>about us</td>
+                <td>privacy</td>
+                <td>terms & condition</td>
+                <td></td>
+              </tr>
+  
+              <tr>
+                <td>how can we help</td>
+                <td>FAQs</td>
+                <td></td>
+                <td></td>
+              </tr>
+  
+              <tr>
+                <td>connect with us</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+  
+          <div class="logos">
+            <a href="facebook.com"
+              ><i class="fa-brands fa-facebook-f" style="color: #74c0fc"></i
+            ></a>
+            <a href="instagram.com"
+              ><i class="fa-brands fa-instagram" style="color: #d70f0f"></i
+            ></a>
+            <a href="linkedin.com"
+              ><i class="fa-brands fa-linkedin-in" style="color: #74c0fc"></i
+            ></a>
+            <a href="youtube.com"
+              ><i class="fa-brands fa-youtube" style="color: #c90303"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+  </body>
+</html>

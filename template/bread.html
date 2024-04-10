@@ -1,0 +1,426 @@
+{% extends 'product.html' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+{%load static%}
+    <!--style cs-->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+
+    <!--js file-->
+    <script src="fil.js"></script>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--box icon-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css"
+      integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.min.js"
+      integrity="sha512-y8/3lysXD6CUJkBj4RZM7o9U0t35voPBOSRHLvlUZ2zmU+NLQhezEpe/pMeFxfpRJY7RmlTv67DYhphyiyxBRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    {%block content%}
+    <div class="header">
+      <nav>
+        <img src="{%static 'image/logo1.png'%}" style="height: 80px" />
+
+        <ul>
+          <li><a href="home.html">Home</a><li></li>
+
+          <li><a href="city.html">Deliver in</a></li>
+          <li><a href="story.html">Our story</a></li>
+          <li><a href="product.html">Product</a></li>
+        </ul>
+      </nav>
+
+      <div class="icon">
+        <a href=""><i class="fa-solid fa-user" style="margin-left: -15%"></i></a>
+        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+   
+      <a href="#" class="btn"><button class="btn1">Downlod App</button> </a>
+    </div>
+
+    <section class="coconut">
+        <!--<div class="water">
+          <a href="#"
+            ><h2 class="milks">
+              milk & <i class="bx bxs-right-arrow" style="margin-left: 4%"></i
+              ><br />coconut water
+            </h2></a
+          >-->
+  
+          <table style="width:5%">
+            <tr>
+             <th><img src="{%static 'image/milk_1.png'%} " style="width:auto;height: 40px;" /></th> 
+              <th><a href="bread.html" class="sss">
+               milk & coconut water
+              </th><a>
+            </tr>
+  
+            <tr>
+              <th><img src="{%static 'image/bread.png'%}" style="width:auto;height: 40px;" /></th>
+              <th><a href="milk.html" class="sss">bread & eggs</a></th>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <h3  style="margin-top: -17%;margin-left: 20%;font-size:30px">buy fresh baked breads online</h3>
+
+      <!-- bread produc -->
+      <section class="">
+        <div class="Container6">
+          <div class="milk_image6">
+            <img src="{% static 'image/COCONUT-PDP-2.jpg_1692174145893.jpg'%}" class="image_milk6">
+          </div>
+      
+          <div class="milk_content6">
+            <div class="milk_title6"><a href="">Coconut Water</a></div>
+            <div class="milk_price6">$ {{price}}</div>
+            <div class="milk_liter6">450ml</div>
+          </div>
+      
+          <hr>
+          <div class="milk_subcontent6">
+            <p>
+              <img src="{% static 'image/leaf.jpeg'%}" class="leaf6" />chemical free
+              <img src="{% static 'image/test.jpeg'%}" class="leaf6" />72 test everyday
+              <img src="{% static 'image/apple.jpeg'%}" class="leaf6" />farm
+              freshness<br />
+              <img src="{% static 'image/milk1.jpeg'%}" class="leaf6" />100% pure
+            </p>
+          </div>
+      
+          <hr>
+      
+          <div class="milk_description">
+            <p>• Country Delight is delighted to present the brand of desi eggs that has become a quick favourite among our egg connoisseurs.</p>
+          </div>
+          <hr>
+      
+          <div><a href="#" class="btns"><button class="btn12">
+                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+              </button>
+              <button class="btn123">
+                <i class="fa-solid fa-heart"></i>Add to wishlist
+              </button></a>
+          </div>
+        </div>
+      
+      </section>
+      
+      <section class="">
+        <div class="Container7">
+          <div class="milk_image">
+            <img src="{% static 'image/COCONUT-PDP-2.jpg_1692174145893.jpg'%}" class="image_milk7">
+          </div>
+      
+          <div class="milk_content7">
+            <div class="milk_title7"><a href="">Coconut Water</a></div>
+            <div class="milk_price7">$ 50</div>
+            <div class="milk_liter7">450ml</div>
+          </div>
+          <hr>
+        
+      
+          <div class="milk_subcontent7">
+            <p>
+              <img src="{% static 'image/s.png'%}" class="leaf7" />chemical free
+              <img src="{% static 'image/a.png'%}" class="leaf7" />72 test everyday
+              <img src="{% static 'image/t.png'%}" class="leaf7" />farm
+              freshness<br />
+              <img src="{% static 'image/h.png'%}" class="leaf7" />100% pure
+            </p>
+          </div>
+      
+          <hr>
+      
+          <div class="milk_description">
+            <p>• Country Delight is delighted to present the brand of desi eggs that has become a quick favourite among our egg connoisseurs.</p>
+          </div>
+          <hr>
+      
+          <div><a href="#" class="btns"><button class="btn12">
+                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+              </button>
+              <button class="btn123">
+                <i class="fa-solid fa-heart"></i>Add to wishlist
+              </button></a>
+          </div>
+        </div>
+      
+      </section>
+      
+      <section class="">
+        <div class="Container8">
+          <div class="milk_image8">
+            <img src="{% static 'image/COCONUT-PDP-2.jpg_1692174145893.jpg'%}" class="image_milk8">
+          </div>
+      
+          <div class="milk_content8">
+            <div class="milk_title8"><a href="">Coconut Water</a></div>
+            <div class="milk_price8">$ 50</div>
+            <div class="milk_liter8">450ml</div>
+          </div>
+      
+          <hr>
+          <div class="milk_subcontent8">
+            <p>
+              <img src="{% static 'image/leaf.jpeg'%}" class="leaf8" />chemical free
+              <img src="{% static 'image/test.jpeg'%}" class="leaf8" />72 test everyday
+              <img src="{% static 'image/apple.jpeg'%}" class="leaf8" />farm
+              freshness<br />
+              <img src="{% static 'image/milk1.jpeg'%}" class="leaf8" />100% pure
+            </p>
+          </div>
+      
+          <hr>
+      
+          <div class="milk_description">
+            <p>• Country Delight is delighted to present the brand of desi eggs that has become a quick favourite among our egg connoisseurs.</p>
+          </div>
+          <hr>
+      
+          <div><a href="#" class="btns"><button class="btn12">
+                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+              </button>
+              <button class="btn123">
+                <i class="fa-solid fa-heart"></i>Add to wishlist
+              </button></a>
+          </div>
+        </div>
+      
+      </section>
+
+
+      <section class="qr">
+        <div class="membership" style="background-color: aliceblue;margin-left: 20%; width: 80%;">
+          <h2 style="margin-top: 4%; margin-left: 3%; font-size: 25px">
+            Free Membership
+          </h2>
+          <p style="margin-top: 1%; margin-left: 3%; font-size: 20px">
+            on your signup
+          </p>
+  
+          <div class="scanner">
+            <img src="{%static 'image/qr_code.png'%} " class="scan_code" />
+            <h6 style="margin-left: 30%; margin-top: 1%">scan to download</h6>
+          </div>
+  
+          <form class="input_value">
+            <input type="text" placeholder="enter your number" />
+            <button type="submit" class="btn3">Send Link</button>
+          </form>
+  
+          <div class="app">
+            <a
+              href="https://apps.apple.com/in/app/country-delight-milk-grocery/id1090309756?is_retargeting=true&source_caller=ui&shortlink=pq2np6sj&c=IOS_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+              ><button class="btn4">
+                <img src="{%static 'image/apple (1).png'%} " style="height: 30px" />Available
+                on the app store
+              </button></a
+            ><br />
+  
+            <a
+              href="https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight&is_retargeting=true&source_caller=ui&shortlink=7r9ie41j&c=Playstore_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+              ><button class="btn4">
+                <img src="{%static 'image/android.png'%}" style="height: 30px" />Get it on
+                google play
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="detail">
+        <div class="details">
+            <p><b>Buy Bread Online</b><br><br> Tasty and healthy bakery range with No-Preservatives processing
+
+                Discover the delight of soft and spongy bread loaves with Country Delight. Our wholesome and nourishing quality ensures every loaf is kneaded with added butter and cold-pressed sunflower oil only. Promising a taste that's both rich and fulfilling. Free from added artificial colors and preservatives, our breads celebrate the pure joy of natural ingredients.<br><br><br>
+                
+                Country Delight's selection ranges from classic white bread, perfect for your morning toast, to whole wheat and specialty options like brown bread, sourdough, and multigrain. Each variety is crafted to satisfy your taste buds and support your health goals with naturally occurring dietary fibers, vitamins, and minerals.<br><br><br>
+                
+                Choosing Country Delight's bakery items means opting for bread that's fresh, delicious, and safe for you. We ensure our recipes allow for freshness premium quality in every slice. <br><br><br>
+                
+                <b>Types of Breads Country Delight offers:</b><br><br>
+                
+                <b>Brown Bread:</b><br><br> Our brown bread is crafted from the finest whole wheat flour to ensure every slice is rich in natural fiber and nutrients. Kneaded with butter for a soft and moist texture, this loaf is perfect for those seeking a healthier alternative without compromising on taste. Free from preservatives, our brown bread is pure, wholesome goodness.• White Bread: Country Delight's white bread is the epitome of softness and flavor. Made from premium quality flour and kneaded with butter for that melt-in-your-mouth experience, it makes for perfect cold sandwiches. With no added artificial colors or preservatives, it's the right choice for your household.<br><br><br>
+                
+                <b>Multigrain Bread:</b><br><br> Packed with the goodness of 8 types of grains, including ragi and bajra, and enriched with 5 types of seeds like sunflower and pumpkin seeds, our multigrain bread is a nutrient powerhouse. This loaf not only offers a diverse range of health benefits but also features a unique, hearty taste. Kneaded with butter and cold-pressed sunflower oil, it makes every bite a wholesome delight <br><br><br>
+                
+                
+                <b>Home-style Whole Wheat Bread:</b><br><br> Representing the true art form of an artisanal loaf, our home-style whole wheat bread is made with 100% whole wheatand prepared in the classic sourdough method. Like our entire range, this loaf is free from preservatives and artificial coloring too, ensuring a healthy and authentic experience with every slice.<br><br><br>
+                
+                Every variety of bread at Country Delight is artfully created to present a delightful blend of crunchy exteriors, soft and airy middles, and a captivating aroma, ensuring a rich sensory experience with each bite. By choosing our bread, you're choosing a product that's free from harmful additives, rich in natural ingredients, and made with love and care. Enjoy the unparalleled quality and deliciousness of our bread selection by ordering on our app today or starting a subscription.<br><br><br>
+                
+                Why add Sourdough Bread to your diet?Sourdough bread is a traditional type of bread made by fermenting the dough using naturally occurring lactobacilli and yeast. This method of preparation dates back thousands of years and is known for its distinctive tangy flavor, chewy texture, and crisp crust. The fermentation process not only imparts a taste but also offers several health benefits, making sourdough bread a Sourdough is good for you.<br><br><br>
+                
+                <b>Easier Digestion:</b><br><br> The fermentation process breaks down gluten, which can make sourdough bread easier to digest for people with mild gluten sensitivities. It's not gluten-free but is often better tolerated than standard wheat bread. 
+                
+                <b>Improved Nutrient Absorption:</b><br><br> Fermentation helps to break down the phytic acid found in flour, which can inhibit the absorption of minerals. This means that the body can more easily absorb the nutrients from sourdough bread, such as iron, zinc, and magnesium. 
+                
+                <b>Lower Glycemic Index:</b><br><br> Sourdough fermentation can lower the bread's glycemic index (GI), resulting in a slower release of glucose into the bloodstream. This can help in managing blood sugar levels, making it a healthier option for people with diabetes and those looking to maintain stable energy levels.<br><br><br> 
+                
+                <b>No Added Preservatives:</b><br><br> Traditional sourdough recipes do not require the use of commercial yeast or preservatives, making it a cleaner, more natural bread option.Choosing to buy bread online and its benefits a preferred choice for many.uniqueEmbracing the trend of online shopping for buying bread through digital platforms has redefined convenience and quality in our daily routines. Traditional shopping often presents hurdles such as limited freshness, a narrow selection of bread types, and concerns over the inclusion of preservatives or unhealthy additives. Country Delight's online bread delivery service stands out as a solution, offering an unparalleled selection of breads that cater to diverse dietary preferences and health considerations.<br><br><br>
+                
+                Bread variety for every palate and diet: Country Delight takes pride in its wide array of bread options, ensuring there's something for everyone. From the dense and nutritious Brown Bread made with whole wheat flour, ideal for those seeking a fiber-rich diet, to the classic White Bread, soft and perfect for a comforting sandwich. Our Multigrain Bread is a powerhouse of nutrition, packed with the goodness of eight types of grains, including ragi and bajra, and five types of seeds, such as sunflower and pumpkin seeds, catering to those looking for a crunchy, nutrient-packed option. For the purists, our Homestyle Whole Wheat Bread is a convenient way to consume gut-friendly food. It comes pre sliced and cooks like artisanal bakery loaves that many love but find expensive.<br><br><br>
+                
+                Ordering anytime made easy: Say goodbye to the days of running out of bread on a high-energy morning or during evening snack time. Our app's intuitiveinterface allows you to order bread as per your consumption patterns, whether it's a daily necessity, a bulk order for the holidays, or a last-minute purchase. The flexibility to modify your order till midnight based on your needs ensures you always have enough bread.<br><br><br>
+                
+                Tracking and managing expenses: Tracking your bakery expenses becomes seamless with our app. Utilize the built-in calendar to get a detailed summary of your spending, making it easier to stick to your budget. With this level of insight, you're empowered to oversee your bakery purchases without any surprises.
+                
+                </p>
+
+        </div>
+      </section>
+
+    <section class="last">
+      <div class="external">
+        <h1>Explore our range</h1>
+        <p>
+          choose from our wide range of staples,dairy products,and fresh
+          harvest.get 100% natural essentials home delivered every day.
+        </p>
+
+        <img
+          src="{%static 'image/fruits.webp'%}"
+          style="margin-top: -2%; height: auto; width: 95%; margin-left: 3%"
+        />
+
+        <a href="#" class="btn6">
+          <button class="btn5">view all products</button></a
+        >
+
+        <div>
+          <table
+            style="
+              width: 92%;
+              border: 1px solid white;
+              margin-left: 3%;
+              background-color: white;
+            "
+          >
+            <tr>
+              <th>cow milk</th>
+              <th>buffalo milk</th>
+              <th>low fat cow milk</th>
+              <th>download app</th>
+            </tr>
+
+            <tr>
+              <td class="haii">cow milk</td>
+              <td class="haii">buffalo milk</td>
+              <td class="haii">low at cow milk</td>
+              <td>
+                <a
+                  href="https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight&is_retargeting=true&source_caller=ui&shortlink=7r9ie41j&c=Playstore_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                  ><button class="btn7">
+                    <img
+                      src="{%static 'image/android.png'%}"
+                      style="height: 30px; margin-right: -1%"
+                    />Get it on google play
+                  </button></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a
+                  href="https://apps.apple.com/in/app/country-delight-milk-grocery/id1090309756?is_retargeting=true&source_caller=ui&shortlink=pq2np6sj&c=IOS_Menu_Footer_Widget_Allpages&pid=CountryDelight_Website&af_click_lookback=30d&af_xp=custom"
+                  ><button class="btn7">
+                    <img
+                      src="{%static 'image/apple (1).png'%} "
+                      style="height: 30px; margin-right: -1%"
+                    />Available on the app store
+                  </button></a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr />
+        <div>
+          <table style="width: 80%; margin-left: 2%">
+            <tr>
+              <td>about us</td>
+              <td>privacy</td>
+              <td>terms & condition</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>how can we help</td>
+              <td>FAQs</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>connect with us</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="logos">
+          <a href="facebook.com"
+            ><i class="fa-brands fa-facebook-f" style="color: #74c0fc"></i
+          ></a>
+          <a href="instagram.com"
+            ><i class="fa-brands fa-instagram" style="color: #d70f0f"></i
+          ></a>
+          <a href="linkedin.com"
+            ><i class="fa-brands fa-linkedin-in" style="color: #74c0fc"></i
+          ></a>
+          <a href="youtube.com"
+            ><i class="fa-brands fa-youtube" style="color: #c90303"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    {%endblock%}
+  </body>
+</html>
